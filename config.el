@@ -91,3 +91,9 @@
           org-roam-ui-follow t
           org-roam-ui-update-on-save t
           org-roam-ui-open-on-start t))
+
+
+;; tranceparency
+(set-frame-parameter nil 'alpha '(85 85))
+(add-to-list 'default-frame-alist '(alpha 85 85))
+(setq scroll-margin 5)
