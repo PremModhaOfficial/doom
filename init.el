@@ -197,8 +197,3 @@
        :config
        ;;literate
        (default +bindings +smartparens))
-
-(set-frame-parameter nil 'alpha '(85 85))
-(add-to-list 'default-frame-alist '(alpha 85 85))
-
-(setq scroll-margin 5)
