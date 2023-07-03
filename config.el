@@ -97,3 +97,11 @@
 (set-frame-parameter nil 'alpha '(85 85))
 (add-to-list 'default-frame-alist '(alpha 85 85))
 (setq scroll-margin 5)
+
+(setq lsp-clients-clangd-args '("-j=3"
+                                "--background-index"
+                                "--clang-tidy"
+                                "--completion-style=detailed"
+                                "--header-insertion=never"
+                                "--header-insertion-decorators=0"))
+(after! lsp-clangd (set-lsp-priority! 'clangd 2))
