@@ -79,7 +79,7 @@
 
 (use-package! websocket
     :after org-roam)
-
+(setq org-roam-completion-everywhere t)
 (use-package! org-roam-ui
     :after org-roam ;; or :after org
 ;;         normally we'd recommend hooking orui after org-roam, but since org-roam does not have
@@ -94,8 +94,8 @@
 
 
 ;; tranceparency
-(set-frame-parameter nil 'alpha '(85 85))
-(add-to-list 'default-frame-alist '(alpha 85 85))
+(set-frame-parameter nil 'alpha '(95 95))
+(add-to-list 'default-frame-alist '(alpha 95 95))
 (setq scroll-margin 5)
 
 ;; lsp for the cc
