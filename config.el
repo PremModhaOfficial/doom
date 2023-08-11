@@ -32,7 +32,8 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'spacemacs-dark)
-(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 18 :weight 'light))
+(setq doom-font (font-spec :family "JetBrainsMonoNL Nerd Font Mono" :size 22 :weight 'light :slant 'italic :width 'normal :spacing 100 :scalable 'true))
+       ;; full name: JetBrainsMonoNL Nerd Font Mono:pixelsize=22:foundry=JB:weight=bold:slant=italic:width=normal:spacing=100:scalable=true
 
 ;; full name: JetBrainsMono Nerd Font:pixelsize=22:foundry=JB:weight=extra-bold:slant=italic:width=normal:spacing=100:scalable=true
 ;; This determines the style of line numbers in effect. If set to `nil', line
@@ -93,6 +94,7 @@
           org-roam-ui-update-on-save t
           org-roam-ui-open-on-start t))
 
+;; (setq vterm-shell `/bin/bash)
 
 ;; tranceparency
 (set-frame-parameter nil 'alpha '(96 96))
@@ -113,20 +115,20 @@
 ;; (after! ccls
 ;;   (setq ccls-initialization-options '(:index (:comments 2) :completion (:detailedLabel t)))
 ;;   (set-lsp-priority! 'ccls 2)) ; optional as ccls is the default in Doom
-(use-package! obsidian
-  :ensure t
-  :demand t
-  :config
-  (obsidian-specify-path "~/A_Prem")
-  (global-obsidian-mode t)
-  :custom
-  ;; This directory will be used for `obsidian-capture' if set.
-  (obsidian-inbox-directory "Inbox")
-  :bind (:map obsidian-mode-map
-  ("C-c C-a" . obsidian-capture)
-  ;; Replace C-c C-o with Obsidian.el's implementation. It's ok to use another key binding.
-  ("C-c C-o" . obsidian-follow-link-at-point)
-  ;; Jump to backlinks
-  ("C-c C-b" . obsidian-backlink-jump)
-  ;; If you prefer you can use `obsidian-insert-link'
-  ("C-c C-l" . obsidian-insert-wikilink)))
+;; (use-package! obsidian
+;;   :ensure t
+;;   :demand t
+;;   :config
+;;   (obsidian-specify-path "~/A_Prem")
+;;   (global-obsidian-mode t)
+;;   :custom
+;;   ;; This directory will be used for `obsidian-capture' if set.
+;;   (obsidian-inbox-directory "Inbox")
+;;   :bind (:map obsidian-mode-map
+;;   ("C-c C-a" . obsidian-capture)
+;;   ;; Replace C-c C-o with Obsidian.el's implementation. It's ok to use another key binding.
+;;   ("C-c C-o" . obsidian-follow-link-at-point)
+;;   ;; Jump to backlinks
+;;   ("C-c C-b" . obsidian-backlink-jump)
+;;   ;; If you prefer you can use `obsidian-insert-link'
+;;   ("C-c C-l" . obsidian-insert-wikilink)))
