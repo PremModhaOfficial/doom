@@ -32,8 +32,9 @@
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
 (setq doom-theme 'spacemacs-dark)
-(setq doom-font (font-spec :family "JetBrainsMonoNL Nerd Font Mono" :size 22 :weight 'light :slant 'italic :width 'normal :spacing 100 :scalable 'true))
+(setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 22 :weight 'light :slant 'normal :width 'normal :scalable 'true))
        ;; full name: JetBrainsMonoNL Nerd Font Mono:pixelsize=22:foundry=JB:weight=bold:slant=italic:width=normal:spacing=100:scalable=true
+       ;; ====
 
 ;; full name: JetBrainsMono Nerd Font:pixelsize=22:foundry=JB:weight=extra-bold:slant=italic:width=normal:spacing=100:scalable=true
 ;; This determines the style of line numbers in effect. If set to `nil', line
