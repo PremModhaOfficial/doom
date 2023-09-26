@@ -67,7 +67,8 @@
        ;;word-wrap         ; soft wrapping with language-aware indent
 
        :emacs
-       dired             ; making dired pretty [functional]
+       (dired
+        +icons)             ; making dired pretty [functional]
        ;; electric          ; smarter, keyword-based electric-indent
        (ibuffer
         +icon)         ; interactive buffer management
@@ -117,7 +118,6 @@
        ;;agda              ; types of types of types of types...
        ;;beancount         ; mind the GAAP
        (cc
-        +lsp
         +tree-sitter)         ; C > C++ == 1
        ;;clojure           ; java with a lisp
        ;;common-lisp       ; if you've seen one lisp, you've seen them all
@@ -140,12 +140,13 @@
        ;;gdscript          ; the language you waited for
        ;;(go +lsp)         ; the hipster dialect
        ;;(graphql +lsp)    ; Give queries a REST
-       (haskell +lsp)    ; a language that's lazier than I am
+       (haskell)    ; a language that's lazier than I am
        ;;hy                ; readability of scheme w/ speed of python
        ;;idris             ; a language you can depend on
        ;;json              ; At least it ain't XML
        (java
         +lsp
+        +eglot
         +tree-sitter)       ; the poster child for carpal tunnel syndrome
        ;;javascript        ; all(hope(abandon(ye(who(enter(here))))))
        ;;julia             ; a better, faster MATLAB
@@ -184,7 +185,7 @@
        ;;zig               ; C, but simpler
 
        :email
-       (mu4e +org +gmail)
+       ;; (mu4e +org +gmail)
        ;;notmuch
        ;;(wanderlust +gmail)
 

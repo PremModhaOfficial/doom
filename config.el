@@ -31,6 +31,7 @@
 ;; There are two ways to load a theme. Both assume the theme is installed and
 ;; available. You can either set `doom-theme' or manually load a theme with the
 ;; `load-theme' function. This is the default:
+;; (setq doom-theme 'spacemacs-dark)
 (setq doom-theme 'spacemacs-dark)
 (setq doom-font (font-spec :family "JetBrainsMono Nerd Font" :size 22 :weight 'light :slant 'normal :width 'normal :scalable 'true))
        ;; full name: JetBrainsMonoNL Nerd Font Mono:pixelsize=22:foundry=JB:weight=bold:slant=italic:width=normal:spacing=100:scalable=true
@@ -98,9 +99,12 @@
 ;; (setq vterm-shell `/bin/bash)
 
 ;; tranceparency
-(set-frame-parameter nil 'alpha '(96 96))
-(add-to-list 'default-frame-alist '(alpha 96 96))
+;; (set-frame-parameter nil 'alpha '(96 96))
+(add-to-list 'default-frame-alist '(alpha-background . 80));;
 (setq scroll-margin 5)
+
+;; ;; orgmode
+;; (add-to-list 'org-hide-emphasis-markers 't)
 
 ;; lsp for the cc
 (setq lsp-clients-clangd-args '("-j=3"
